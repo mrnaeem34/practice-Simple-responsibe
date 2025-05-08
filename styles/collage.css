@@ -21,3 +21,20 @@ img{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
+@media screen and (max-width: 576px) {
+    .row{
+        flex-direction: column;
+        height: auto;
+    }
+    .collage2{
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+}
+/* medium device */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .row{
+        flex-direction: column;
+        height: auto;
+    }
+}
