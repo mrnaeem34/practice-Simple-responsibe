@@ -4,6 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 100px) 20px 20px;
+            gap: 20px;
+            
+        }
+        .box{
+            background-color: gray;
+            border-radius: 10px;
+            text-align: center;
+            justify-content: center;
+            
+        }
+        #box-1{
+            grid-row: span 5;
+        }
+        #box-11, #box-12{
+            grid-column: span 3;
+        }
+        #box-6, #box-7, #box-9, #box-10{
+            background-color: brown;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
